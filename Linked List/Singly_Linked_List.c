@@ -12,35 +12,38 @@ struct node *head;
 void insert()
 {
 	int data;
-	for(;;){
-	printf("Enter the data to be inserted:");
-	scanf("%d",&data);
-	if(data!=0){
-	struct node *ptr,*temp;    
-    ptr=malloc(sizeof(struct node));      
-    ptr->data=data; 
-    if(head==NULL)  
-    {  
-        ptr->link=NULL;  
-        head = ptr;  
-        printf("1st Node inserted\n");  
-    }  
-    else  
-    {
-        temp=head;  
-        while (temp->link!=NULL)  
-        {
-        	temp=temp->link;  
-        }  
-        temp->link=ptr;  
-        ptr->link=NULL;
-        printf("Node inserted\n");  
-    }
-    }
-    else{
-    	break;
-    }
-    }
+	for(;;)
+	{
+		printf("Enter the data to be inserted:");
+		scanf("%d",&data);
+		if(data!=0)
+		{
+			struct node *ptr,*temp;    
+    			ptr=malloc(sizeof(struct node));      
+    			ptr->data=data; 
+    			if(head==NULL)  
+    			{  
+        			ptr->link=NULL;  
+        			head = ptr;  
+        			printf("1st Node inserted\n");  
+    			}  
+    			else  
+    			{
+        			temp=head;  
+        			while (temp->link!=NULL)  
+        			{
+        				temp=temp->link;  
+        			}  
+        			temp->link=ptr;  
+        			ptr->link=NULL;
+        			printf("Node inserted\n");  
+    			}
+    		}
+    		else
+		{
+    			break;
+    		}
+	}
 }
 
 void count_of_nodes(struct node *head)
