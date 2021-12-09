@@ -1,3 +1,7 @@
+//QUESTION
+/*Devise a program to create a list of integers dynamically.
+Write a Count ( )  function that counts the number of nodes in a Singly Linked List and display the contents of the list and the total count of nodes. */
+
 #include<stdio.h>
 #include<stdlib.h>
 
