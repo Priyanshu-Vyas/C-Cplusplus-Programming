@@ -1,7 +1,7 @@
-# DataSturcturesAndAlgorithms-C
-        # Stack
-        # Queue
-        # LinkedList
-        # SortingAndSearching
-        # Trees
-        # Graphs
+# Data-Sturctures-And-Algorithms- C / C++
+        Stack
+        Queue
+        LinkedList
+        SortingAndSearching
+        Trees
+        Graphs
